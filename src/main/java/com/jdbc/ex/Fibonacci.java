@@ -22,4 +22,19 @@ public class Fibonacci {
         return list;
     }
 
+    public int fib(int n) { // leet code question number : 509
+        if(n == 0) { return n;}
+        int a = 0;
+        int b = 1;
+        int trackIndex = a;
+
+        while (true) {
+            trackIndex += 1;
+            int c = a + b;
+            if (trackIndex == n) { break; }
+            a = b; b = c;
+        }
+        return b;
+    }
+
 }

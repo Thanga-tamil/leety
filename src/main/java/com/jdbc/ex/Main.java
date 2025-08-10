@@ -11,7 +11,9 @@ public class Main {
 
         measureTime("Hash Map", () -> System.out.println("Two Sum Response By Hash Map :: " + Arrays.toString(twoSum.twoSumByHashMap())) );
 
-        measureTime("Fibonacci Series", () -> System.out.println(new Fibonacci().fibonacciSeries(1000)));
+        measureTime("Fibonacci Series", () -> System.out.println("Fibonacci Series " + new Fibonacci().fibonacciSeries(1000)));
+
+        measureTime("Fibonacci Series Number By Index", () -> System.out.println("Find Fibo By Index " + new Fibonacci().fib(6)));
 
     }
 
