@@ -11,6 +11,8 @@ public class Main {
 
         measureTime("Hash Map", () -> System.out.println("Two Sum Response By Hash Map :: " + Arrays.toString(twoSum.twoSumByHashMap())) );
 
+        measureTime("Fibonacci Series", () -> System.out.println(new Fibonacci().fibonacciSeries(1000)));
+
     }
 
     private static void measureTime(String label, Runnable code) {
